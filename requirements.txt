@@ -3,4 +3,4 @@ pdfplumber
 scikit-learn
 numpy
 python-dotenv
-google-generativeai
+google-genai
