@@ -9,12 +9,11 @@ Finally, I integrated everything into a Streamlit interface, where users can upl
 
 
 
+
+
 python -m venv venv
-
 venv\Scripts\activate
-
 pip install -r requirements.txt
-
 streamlit run app.py
 
 GEMINI_API_KEY=
