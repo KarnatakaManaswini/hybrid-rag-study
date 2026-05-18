@@ -1,6 +1,6 @@
 I built a RAG-based AI Study Assistant that allows users to upload a PDF and ask questions, and the system answers strictly based on the content of that document.
-
 I implemented a complete RAG pipeline—from document ingestion to retrieval and context-aware answer generation using an LLM.
+
 When a user uploads a PDF, the system first extracts all the text using a PDF parsing library. Since the extracted content can be large and unstructured, I split it into smaller chunks. Each chunk contains a few hundred words, and I allowed a small overlap between chunks so that we don’t lose any context at the boundaries.
 
 Once the document is converted into chunks, I build a retrieval system on top of it. I used a TF-IDF–based local retriever, where each chunk is converted into a vector representing word importance.
